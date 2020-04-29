@@ -1,0 +1,28 @@
+let fibonacci {
+    if n < 2 {
+        return n;
+    };
+
+    let a!;
+    let b = 1;
+    let c;
+
+    for i in range(2, n + 1) {
+        c = a + b;
+        a = b;
+        b = c;
+    };
+
+    return b;
+} from n;
+
+puts fibonacci(7);
+
+let dict {
+    . {
+        return keys;
+    };
+} from **keys;
+
+let d = dict(key=5);
+puts d['key'];
